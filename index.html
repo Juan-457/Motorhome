@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13c8ec",
+                        "background-light": "#f6f8f8",
+                        "background-dark": "#101f22",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>AdventureCampers | Premium Motorhome Rentals</title>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Hero Section with Transparent Nav -->
+<div class="relative h-[85vh] w-full flex flex-col">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="Modern motorhome parked by a serene mountain lake at sunrise" style='background-image: linear-gradient(rgba(16, 31, 34, 0.4) 0%, rgba(16, 31, 34, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAj8whcLRRYDLUbXm7xndajkcR8q2UWBiwR8M-6vobQKqV56nruTPU-Kc2JiM2Lz1IEuQScAsaZhOPh-TzCn9gjM8VjIp7lDjt36crQlmPSeH1lresoXDt3z-zwSlqlf3vngwZSDtD9JQQH-pvQpUqsZb7EEvcF_kgmEE51awiNZyk6ZCvBAXqfTp_H0zQyRKPDR0yPgSI4lZlbKMQw-OQfruKYCG4Ahgf8llIkWNjdpiwbxYRXU40vxCsXAa898NbepQQUOWirMlg");'>
+</div>
+<!-- Navigation Bar -->
+<header class="relative z-20 flex items-center justify-between px-6 py-6 lg:px-20">
+<div class="flex items-center gap-3 text-white">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-background-dark">rv_hookup</span>
+</div>
+<h2 class="text-xl font-extrabold tracking-tight">AdventureCampers</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="#">Fleet</a>
+<a class="text-white text-sm font-semibold hover:text-primary transition-colors" href="#">Destinations</a>
+</nav>
+<div class="flex items-center gap-6">
+<button class="bg-primary hover:bg-primary/90 text-background-dark px-6 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg">
+                        Book Now
+                    </button>
+<div class="size-10 rounded-full border-2 border-white/20 overflow-hidden cursor-pointer">
+<img alt="User avatar" class="w-full h-full object-cover" data-alt="User profile picture portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhCPelpL_VxryxzMQ6b2aH1_dRMxvEubE_Z_WCPM7AI0guiHG7YCdy46KM7sK7eJZqt0i6wBZUX-8Tl91Cdr59JGRlODwVGoFaEuigH_WGU-YADKKVn7P9tM59AHWK1MFNNVWlOT0nE6_PjhDOC0ULvEPtjiEiFDa1E0vKfmg8LmoHNg10ms9x-q6kYeAofmxDm5aeWBeNPjdlSahkSbyOqdpINb0BlbAHUGC3rwPvB10DeT9YcH1cw8yFwK0fyZXQ3jMbBApI3LE"/>
+</div>
+</div>
+</header>
+<!-- Hero Content -->
+<div class="relative z-10 flex flex-1 flex-col items-center justify-center px-4 text-center">
+<h1 class="text-white text-5xl md:text-7xl font-extrabold tracking-tight mb-4 max-w-4xl">
+                    Experience Outdoor Freedom
+                </h1>
+<p class="text-white/90 text-lg md:text-xl font-medium mb-12 max-w-2xl">
+                    Rent a premium motorhome and start your mountain adventure today.
+                </p>
+<!-- Search Widget -->
+<div class="w-full max-w-5xl bg-white/10 backdrop-blur-md p-2 rounded-2xl border border-white/20 shadow-2xl">
+<div class="bg-white rounded-xl flex flex-col md:flex-row items-center divide-y md:divide-y-0 md:divide-x divide-slate-100">
+<!-- Pick-up -->
+<div class="flex-1 w-full px-6 py-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div class="flex flex-col items-start">
+<span class="text-[10px] font-bold uppercase text-slate-400">Pick-up Location</span>
+<input class="w-full border-none p-0 focus:ring-0 text-slate-900 font-semibold placeholder:text-slate-300" placeholder="Where to start?" type="text"/>
+</div>
+</div>
+<!-- Drop-off -->
+<div class="flex-1 w-full px-6 py-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-400">flag</span>
+<div class="flex flex-col items-start">
+<span class="text-[10px] font-bold uppercase text-slate-400">Drop-off Location</span>
+<input class="w-full border-none p-0 focus:ring-0 text-slate-900 font-semibold placeholder:text-slate-300" placeholder="Where to end?" type="text"/>
+</div>
+</div>
+<!-- Dates -->
+<div class="flex-1 w-full px-6 py-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-400">calendar_month</span>
+<div class="flex flex-col items-start">
+<span class="text-[10px] font-bold uppercase text-slate-400">Dates</span>
+<input class="w-full border-none p-0 focus:ring-0 text-slate-900 font-semibold placeholder:text-slate-300" placeholder="Select dates" type="text"/>
+</div>
+</div>
+<!-- Search Button -->
+<div class="p-2 w-full md:w-auto">
+<button class="w-full md:w-auto bg-primary text-background-dark px-10 py-4 rounded-lg font-bold hover:scale-[1.02] transition-transform">
+                                Search
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Why Choose Us Section -->
+<section class="py-24 px-6 lg:px-20 max-w-7xl mx-auto w-full">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<span class="text-primary font-bold tracking-widest uppercase text-sm">Premium Service</span>
+<h2 class="text-4xl md:text-5xl font-extrabold mt-2 leading-tight">Why Choose Our Experience?</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-sm text-lg">
+                    We provide everything you need for the ultimate road trip experience across the most beautiful landscapes.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Freedom Card -->
+<div class="group p-8 rounded-3xl bg-white dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-background-dark text-3xl">map</span>
+</div>
+<h3 class="text-2xl font-bold mb-3">Freedom</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Travel anywhere your heart desires without boundaries. Our flexible rental plans adapt to your itinerary.
+                    </p>
+</div>
+<!-- Equipment Card -->
+<div class="group p-8 rounded-3xl bg-white dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-background-dark text-3xl">home_repair_service</span>
+</div>
+<h3 class="text-2xl font-bold mb-3">Full Equipment</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Our fleet comes fully loaded with premium amenities, from solar power to high-end kitchen kits.
+                    </p>
+</div>
+<!-- Support Card -->
+<div class="group p-8 rounded-3xl bg-white dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700 hover:shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-background-dark text-3xl">headset_mic</span>
+</div>
+<h3 class="text-2xl font-bold mb-3">24/7 Support</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                        We are always here to help you on your journey. Roadside assistance and trip planning available anytime.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Featured Fleet Preview -->
+<section class="bg-slate-900 text-white py-24 px-6 lg:px-20 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center mb-16 gap-6">
+<h2 class="text-4xl font-extrabold tracking-tight">Our Featured Fleet</h2>
+<button class="border border-white/20 px-8 py-3 rounded-xl font-bold hover:bg-white/10 transition-colors">
+                        View All Models
+                    </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Camper 1 -->
+<div class="group">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative">
+<img alt="Family Camper" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern white camper van parked in a pine forest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbXNCc6h1-YFwntGyIzwKEgHi5nN9vBJOp-_HJZSDiC2XLwHzdsNuLozX-LdTx7WV9vXCeGintwcHRU-JQr4RMToG6yYzQrhTwmum9j4ekcPMfL16lmSLx4Ce4JEs5FX9w843CLJP5gTckh3AY-p0hzNuF86Ybk87KZCzfdfzN8wGIvoLRYPPlpg37Kyv4cOt0oWpDoCKDoE3l5bEFyHMMI1TvQgo0mTJ2YyEd2_V2upzHR5hg5Hab9ce1nHVTEqVFYv_p38CF_YY"/>
+<div class="absolute top-4 left-4 bg-primary text-background-dark text-xs font-black px-3 py-1 rounded-full uppercase">
+                                Popular
+                            </div>
+</div>
+<h4 class="text-xl font-bold mb-1">The Alpine Explorer</h4>
+<div class="flex items-center gap-4 text-white/50 text-sm mb-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">group</span> 4 Seats</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">bed</span> 3 Beds</span>
+</div>
+<p class="text-primary font-bold text-lg">From $149 / day</p>
+</div>
+<!-- Camper 2 -->
+<div class="group">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative">
+<img alt="Couple Camper" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Sleek black compact motorhome on a coastal road" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwwmXWBifhtVLPYy-73yjVEEssuwST8p0B4u8eSFsgcMiOVOBkLxzGt-4pqjEBuun1gJW6oP2pkKdVP5vZnx1Qzk-y1dft7-vPrxY0XGRmKO6foC-FtV1HjTncms2wGT8WLVKnnQw4LNSHjr_byGf7wfKhTeJiwQ0gXQ6JK1Y6mAiVvJjZrbDyNHGn5eOcj-XLeniePZPUOGLoAsAMuuoKUCZra-JaFsJDS-KXGxLTA2MclJVQQaemi1NEQDgD3qPAW97J764joLo"/>
+</div>
+<h4 class="text-xl font-bold mb-1">Ocean Wanderer</h4>
+<div class="flex items-center gap-4 text-white/50 text-sm mb-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">group</span> 2 Seats</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">bed</span> 1 Bed</span>
+</div>
+<p class="text-primary font-bold text-lg">From $119 / day</p>
+</div>
+<!-- Camper 3 -->
+<div class="group">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden mb-6 relative">
+<img alt="Luxury Camper" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Large luxury motorhome with slide-outs parked in mountains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXB1xuXL5Tlu5c31bnaLgZRW2kSikdG_dmQqdyVbk9m_HQFC_syehrWZPjgsQvqV5wYNz8U1prhW2rwfnil93HVEQOuRnmd_3NQbXnkDjxQyV5CDaJ0QmW-UHNw9IgGlmt4C9RXn6yv3rPADERsvqUcueE_tyEwnvOhADorNigAyez_gRTWO3gAmtH-TZixjKbNz-GU5OiFx_snxeN3cIVeZydJTlndk6h-oQGcHGts-u507ci3c60X5Hwg5JBiWGz7-jz9lnqKJs"/>
+</div>
+<h4 class="text-xl font-bold mb-1">Peak Luxury 2024</h4>
+<div class="flex items-center gap-4 text-white/50 text-sm mb-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">group</span> 6 Seats</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">bed</span> 4 Beds</span>
+</div>
+<p class="text-primary font-bold text-lg">From $289 / day</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark border-t border-slate-100 dark:border-slate-800 py-16 px-6 lg:px-20">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-sm">
+<div class="flex items-center gap-3 text-slate-900 dark:text-white mb-6">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-background-dark">rv_hookup</span>
+</div>
+<h2 class="text-xl font-extrabold tracking-tight">AdventureCampers</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                        Making road trips unforgettable with premium vehicles and seamless rental experiences since 2012.
+                    </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<h5 class="font-bold text-slate-900 dark:text-white">Explore</h5>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Our Fleet</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Destinations</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Travel Guides</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bold text-slate-900 dark:text-white">Support</h5>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Contact Us</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">FAQs</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Rental Policy</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="font-bold text-slate-900 dark:text-white">Legal</h5>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Terms of Use</a>
+<a class="text-slate-500 hover:text-primary text-sm" href="#">Cookie Settings</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-16 mt-16 border-t border-slate-100 dark:border-slate-800 text-center text-sm text-slate-400">
+                © 2024 AdventureCampers. All rights reserved. Built for the wild at heart.
+            </div>
+</footer>
+</div>
+</body></html>
